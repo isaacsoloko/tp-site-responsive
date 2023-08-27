@@ -1,0 +1,15 @@
+:root{
+    --navbar-bgc : #0F2243;
+    --letecode-color: #DE2589;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
