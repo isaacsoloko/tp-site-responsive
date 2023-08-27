@@ -1,15 +1,200 @@
 :root{
     --navbar-bgc : #0F2243;
     --letecode-color: #DE2589;
+    --container-bgc: #ECEBEB;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("Montserrat-Regular.ttf");
+}
 body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat-Regular';
+    line-height: 1.5;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbar-bgc);
+    color: white;
+    line-height: 50px;
+    padding: 0 10%;
+}
+.navbar div{
+    float: left;
+    display: flex;
+}
+.navbar ul{
+    float: right;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(154, 156, 158);
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+.navbar div img{
+    width: 70px;
+    height: 35px;
+    margin-top: 8px;
+}
+#active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+.container-fluid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+}
+.top-container{
+    margin-top: 70px;
+}
+.top-container h3{
+    margin-bottom: 10px;
+}
+.top-container a{
+    display: block;
+    padding: 7px 20px;
+    background-color: var(--letecode-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px;
+}
+.top-container a:hover, input[type="submit"]:hover{
+    background-color: #ff0088;
+}
+.container-with-color, .boite-lettre-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    padding: 0 10%;
+    background-color: var(--container-bgc);
+    justify-content: center;
+    align-items: center;
+}
+.container-with-color img{
+    width: 35%;
+    height: 220px;
+}
+.container-with-color div{
+    width: 45%;
+    padding: 40px 0;
+}
+.container-with-color h3{
+    margin-bottom: 20px;
+}
+.container{
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container ul{
+    list-style: none;
+}
+.container-membres{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.container-membres div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container-membres div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.boite-lettre-container div, .boite-lettre-container form{
+    width: 40%;
+    padding: 20px 0;
+}
+.boite-lettre-container h3{
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--letecode-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+input[type="email"],
+input[type="text"],
+textarea, select{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #D8D8D8;
+    border: 1px solid #CDCDCD;
+}
+.big-container-cours{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.small-container-cours{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.small-container-cours div{
+    width: 97%;
+    height: 250px;
+    background-color: var(--container-bgc);
+}
+.heure{
+    color: gray;
+    margin-top: -10px;
+    font-size: 12px;
+}
+#form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+#form div{
+    width: 48.5%;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    color: white;
+    background-color: var(--navbar-bgc);
+    padding: 0 10%;
+    line-height: 120px;
 }
