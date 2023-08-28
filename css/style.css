@@ -65,7 +65,7 @@ body{
     padding: 20px 10%;
 }
 .top-container{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .top-container h3{
     margin-bottom: 10px;
@@ -190,6 +190,9 @@ textarea, select{
 #form div{
     width: 48.5%;
 }
+.mobile-device-contacts-form{
+    display: none;
+}
 .footer{
     width: 100%;
     height: 120px;
@@ -197,4 +200,67 @@ textarea, select{
     background-color: var(--navbar-bgc);
     padding: 0 10%;
     line-height: 120px;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 0 5%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .container-fluid{
+        padding: 20px 5%;
+    }
+    .top-container a{
+        padding: 5px 15px;
+    }
+    .container-with-color, .boite-lettre-container{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .container-with-color img, .container-with-color div{
+        width: 100%;
+    }
+    .container-with-color img{
+        height: auto;
+    }
+    .container{
+        padding: 15px 5%;
+        gap: 15px;
+    }
+    .container-membres{
+        flex-wrap: wrap;
+    }
+    .container-membres div{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .big-container-cours{
+        flex-direction: column;
+    }
+    .small-container-cours div{
+        width: 100%;
+    }
+    .boite-lettre-container{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .boite-lettre-container div, .boite-lettre-container form{
+        width: 100%;
+        padding: 20px 0;
+    }
+    #form{
+        flex-direction: column;
+        gap: 0;
+    }
+    #form div{
+        width: 100%;
+    }
+    .mobile-device-contacts-form{
+        display: block;
+    }
+    .desktop-device-contacts-form{
+        display: none;
+    }
 }
