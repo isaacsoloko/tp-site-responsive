@@ -202,12 +202,24 @@ textarea, select{
     line-height: 120px;
 }
 
+.navbar #toogle-btn{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5px;
+    display: none;
+}
+
 @media (max-width: 768px){
     .navbar{
         padding: 0 5%;
     }
     .navbar ul{
         display: none;
+    }
+    .navbar #toogle-btn{
+        display: block;
     }
     .container-fluid{
         padding: 20px 5%;
