@@ -10,6 +10,7 @@
         <meta property="og:image" content="https://isaacsoloko.github.io/tp-site-responsive/img/logo-trans.png" />
         <meta property="og:description" content="TP Site responsive" />
         <link rel="shortcut icon" href="img/logo-trans.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -32,9 +33,23 @@
                     <a href="pages/contacts.html">Contacts</a>
                 </li>
             </ul>
-            <div id="toogle-btn">
-                <img src="img/menu.png" alt="Menu icon">
-            </div>
+            <span class="toggle-btn">
+                <i class="fa fa-bars"></i>
+            </span>
+        </div>
+        <div class="dropdown-menu">
+            <li>
+                <a href="index.html" id="active">Accueil</a>
+            </li>
+            <li>
+                <a href="pages/communaute.html">Communauté</a>
+            </li>
+            <li>
+                <a href="pages/cours.html">Cours</a>
+            </li>
+            <li>
+                <a href="pages/contacts.html">Contacts</a>
+            </li>
         </div>
         <div class="container-fluid top-container">
             <h3>Bienvenue sur notre site</h3>
@@ -91,5 +106,6 @@
                 Développé par Letecode @2023
             </p>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
