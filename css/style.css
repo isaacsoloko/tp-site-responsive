@@ -205,10 +205,9 @@ textarea, select{
 }
 
 .navbar .toggle-btn{
-    width: 20px;
-    height: 20px;
+    font-size: 20px;
     float: right;
-    margin-right: 2%;
+    /*margin-right: 2%;*/
     display: none;
     color: white;
 }
@@ -219,8 +218,8 @@ textarea, select{
 
 .dropdown-menu{
     display: none;
-    position: absolute;
-    right: 4%;
+    position: fixed;
+    right: 10px;
     top: 60px;
     width: 70%;
     height: 0;
