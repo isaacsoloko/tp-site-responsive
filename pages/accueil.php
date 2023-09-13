@@ -9,48 +9,14 @@
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://isaacsoloko.github.io/tp-site-responsive/img/logo-trans.png" />
         <meta property="og:description" content="TP Site responsive" />
-        <link rel="shortcut icon" href="img/logo-trans.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logo-trans.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <div class="navbar">
-            <div>
-                <img src="img/logo-trans.png" alt="Logo Letecode" />
-                <h4>Letecode</h4>
-            </div>
-            <ul>
-                <li>
-                    <a href="index.html" id="active">Accueil</a>
-                </li>
-                <li>
-                    <a href="pages/communaute.html">Communauté</a>
-                </li>
-                <li>
-                    <a href="pages/cours.html">Cours</a>
-                </li>
-                <li>
-                    <a href="pages/contacts.html">Contacts</a>
-                </li>
-            </ul>
-            <span class="toggle-btn">
-                <i class="fa fa-bars"></i>
-            </span>
-        </div>
-        <div class="dropdown-menu">
-            <li>
-                <a href="index.html" id="active">Accueil</a>
-            </li>
-            <li>
-                <a href="pages/communaute.html">Communauté</a>
-            </li>
-            <li>
-                <a href="pages/cours.html">Cours</a>
-            </li>
-            <li>
-                <a href="pages/contacts.html">Contacts</a>
-            </li>
-        </div>
+        <?php
+            include_once('../includes/header.php');
+        ?>
         <div class="container-fluid top-container">
             <h3>Bienvenue sur notre site</h3>
             <p>
@@ -59,10 +25,10 @@
             <p>
                 monde avec votre créativité
             </p>
-            <a href="pages/contacts.html">Nous contacter</a>
+            <a href="contacts.php?page=accueil">Nous contacter</a>
         </div>
         <div class="container-with-color">
-            <img src="img/logo-trans.png" alt="Logo Letecode" />
+            <img src="../img/logo-trans.png" alt="Logo Letecode" />
             <div>
                 <h3>Vous avez droit d'apprendre</h3>
                 <p>
@@ -101,11 +67,9 @@
                 </ul>
             </p>
         </div>
-        <div class="footer">
-            <p>
-                Développé par Letecode @2023
-            </p>
-        </div>
-        <script src="js/script.js"></script>
+        <?php
+            include_once('../includes/footer.php');
+        ?>
+        <script src="../js/script.js"></script>
     </body>
 </html>

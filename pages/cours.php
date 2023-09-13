@@ -14,43 +14,9 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <div class="navbar">
-            <div>
-                <img src="../img/logo-trans.png" alt="Logo Letecode" />
-                <h4>Letecode</h4>
-            </div>
-            <ul>
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="communaute.html">Communauté</a>
-                </li>
-                <li>
-                    <a href="cours.html" id="active">Cours</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Contacts</a>
-                </li>
-            </ul>
-            <span class="toggle-btn">
-                <i class="fa fa-bars"></i>
-            </span>
-        </div>
-        <div class="dropdown-menu">
-            <li>
-                <a href="../index.html">Accueil</a>
-            </li>
-            <li>
-                <a href="communaute.html">Communauté</a>
-            </li>
-            <li>
-                <a href="cours.html" id="active">Cours</a>
-            </li>
-            <li>
-                <a href="contacts.html">Contacts</a>
-            </li>
-        </div>
+        <?php
+            include_once('../includes/header.php');
+        ?>
         <div class="top-container"></div>
         <div class="container">
             <h3>Les cours</h3>
@@ -115,11 +81,9 @@
                 <input type="submit" value="S'abonner">
             </form>
         </div>
-        <div class="footer">
-            <p>
-                Développé par Letecode @2023
-            </p>
-        </div>
+        <?php
+            include_once('../includes/footer.php');
+        ?>
         <script src="../js/script.js"></script>
     </body>
 </html>
