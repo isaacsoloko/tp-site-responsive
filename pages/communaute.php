@@ -25,7 +25,7 @@
             <p>
                 développeur du monde entier
             </p>
-            <a href="contacts.php?page=accueil">Rejoindre</a>
+            <a href="contacts.php?page=contacts">Rejoindre</a>
         </div>
         <div class="container-with-color">
             <div>

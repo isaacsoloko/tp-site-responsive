@@ -25,7 +25,7 @@
             <p>
                 monde avec votre créativité
             </p>
-            <a href="contacts.php?page=accueil">Nous contacter</a>
+            <a href="contacts.php?page=contacts">Nous contacter</a>
         </div>
         <div class="container-with-color">
             <img src="../img/logo-trans.png" alt="Logo Letecode" />
